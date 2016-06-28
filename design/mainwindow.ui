@@ -65,8 +65,8 @@
    <widget class="QPushButton" name="RandomizeButton">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>360</y>
+      <x>530</x>
+      <y>390</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -149,33 +149,12 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>130</y>
+      <y>150</y>
       <width>224</width>
       <height>211</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="3" column="0">
-      <widget class="QPushButton" name="MHRMoveButton">
-       <property name="text">
-        <string>Middle horizontal right</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QPushButton" name="MHMoveButton">
-       <property name="text">
-        <string>Middle horizontal</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="FMoveButton">
-       <property name="text">
-        <string>Front</string>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="0">
       <widget class="QPushButton" name="LMoveButton">
        <property name="text">
@@ -232,13 +211,34 @@
        </property>
       </widget>
      </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="MHRMoveButton">
+       <property name="text">
+        <string>Middle horizontal right</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="MHMoveButton">
+       <property name="text">
+        <string>Middle horizontal</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="FMoveButton">
+       <property name="text">
+        <string>Front</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>20</y>
+      <y>30</y>
       <width>160</width>
       <height>80</height>
      </rect>
@@ -277,7 +277,7 @@
    <widget class="QPushButton" name="resetButton">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>620</x>
       <y>390</y>
       <width>75</width>
       <height>23</height>
@@ -285,6 +285,45 @@
     </property>
     <property name="text">
      <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>130</y>
+      <width>241</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Moves</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>271</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Solver</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>10</y>
+      <width>181</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Animation</string>
     </property>
    </widget>
   </widget>

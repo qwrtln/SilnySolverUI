@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += widgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -30,12 +31,28 @@ SOURCES += \
     ../Dev/src/CrazyCubeMapper.cpp \
     ../Dev/src/OuterCornersMapGenerator.cpp \
     ../Dev/src/MoveMapsGeneratorI.cpp \
-    ../Dev/src/CrazyCubeMoveMapper.cpp
+    ../Dev/src/CrazyCubeMoveMapper.cpp \
+    src/camera3d.cpp \
+    src/input.cpp \
+    src/transform3d.cpp \
+    src/glview.cpp \
 
 HEADERS  += \
-    inc/mainwindow.h
+    inc/mainwindow.h \
+    inc/camera3d.h \
+    inc/transform3d.h \
+    inc/input.h \
+    inc/vertex.h \
+    inc/glview.h \
+    build-SilnySolverGUI-Desktop-Debug/ui_mainwindow.h
 
 
 
 FORMS    += \
     design/mainwindow.ui
+
+DISTFILES += \
+    shaders/simple.frag \
+    shaders/simple.vert
+
+RESOURCES +=

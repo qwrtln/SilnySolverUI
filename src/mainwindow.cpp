@@ -1,6 +1,8 @@
 #include "inc/mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <QSurfaceFormat>
+
 
 #include "../Dev/inc/CrazyCubeImproved.h"
 #include "../Dev/inc/CrazyCubeSolver.h"
@@ -10,6 +12,15 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    // Set OpenGL Version information
+    QSurfaceFormat format;
+    format.setRenderableType(QSurfaceFormat::OpenGL);
+    format.setProfile(QSurfaceFormat::CoreProfile);
+    format.setVersion(3,3);
+    QSurfaceFormat::setDefaultFormat(format);
+
+    ui->openGLWidget->setFormat(format);
 
     //prepare solver
     mySolver.setCrazyCube(&myCube);

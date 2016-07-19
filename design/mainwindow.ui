@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>724</width>
-    <height>471</height>
+    <width>1167</width>
+    <height>717</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -80,8 +80,8 @@
      <rect>
       <x>210</x>
       <y>310</y>
-      <width>111</width>
-      <height>22</height>
+      <width>117</width>
+      <height>25</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -106,8 +106,8 @@
      <rect>
       <x>350</x>
       <y>310</y>
-      <width>111</width>
-      <height>22</height>
+      <width>121</width>
+      <height>25</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -128,8 +128,8 @@
      <rect>
       <x>210</x>
       <y>270</y>
-      <width>151</width>
-      <height>22</height>
+      <width>177</width>
+      <height>25</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -150,7 +150,7 @@
      <rect>
       <x>490</x>
       <y>150</y>
-      <width>224</width>
+      <width>281</width>
       <height>211</height>
      </rect>
     </property>
@@ -239,7 +239,7 @@
      <rect>
       <x>550</x>
       <y>30</y>
-      <width>160</width>
+      <width>181</width>
       <height>80</height>
      </rect>
     </property>
@@ -326,14 +326,24 @@
      <string>Animation</string>
     </property>
    </widget>
+   <widget class="glview" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>961</width>
+      <height>661</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>724</width>
-     <height>21</height>
+     <width>1167</width>
+     <height>19</height>
     </rect>
    </property>
   </widget>
@@ -348,6 +358,13 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>glview</class>
+   <extends>QOpenGLWidget</extends>
+   <header>glview.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

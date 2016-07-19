@@ -26,6 +26,7 @@ public:
     void resizeGL(int width, int height);
     void paintGL();
     void teardownGL();
+    void rotate();
 protected slots:
   void update();
 

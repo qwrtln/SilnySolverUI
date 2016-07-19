@@ -73,8 +73,7 @@ public:
     QPushButton *resetButton;
     QGroupBox *groupBox;
     QGroupBox *groupBox_2;
-    QGroupBox *groupBox_3;
-     GLView *openGLWidget;
+    GLView *openGLWidget;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -83,7 +82,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(724, 471);
+        MainWindow->resize(1167, 717);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         solveButton = new QPushButton(centralWidget);
@@ -97,7 +96,7 @@ public:
         solutionComboBox->setGeometry(QRect(28, 30, 161, 22));
         RandomizeButton = new QPushButton(centralWidget);
         RandomizeButton->setObjectName(QStringLiteral("RandomizeButton"));
-        RandomizeButton->setGeometry(QRect(530, 390, 75, 23));
+        RandomizeButton->setGeometry(QRect(650, 390, 75, 23));
         horizontalLayoutWidget = new QWidget(centralWidget);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
         horizontalLayoutWidget->setGeometry(QRect(210, 310, 117, 25));
@@ -246,23 +245,20 @@ public:
 
         resetButton = new QPushButton(centralWidget);
         resetButton->setObjectName(QStringLiteral("resetButton"));
-        resetButton->setGeometry(QRect(620, 390, 75, 23));
+        resetButton->setGeometry(QRect(560, 390, 75, 23));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(480, 130, 241, 241));
+        groupBox->setGeometry(QRect(480, 130, 301, 241));
         groupBox_2 = new QGroupBox(centralWidget);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
         groupBox_2->setGeometry(QRect(200, 250, 271, 101));
-        groupBox_3 = new QGroupBox(centralWidget);
-        groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
-        groupBox_3->setGeometry(QRect(540, 10, 181, 111));
         openGLWidget = new GLView(centralWidget);
         openGLWidget->setObjectName(QStringLiteral("openGLWidget"));
-        openGLWidget->setGeometry(QRect(200, 10, 271, 211));
+        openGLWidget->setGeometry(QRect(200, 10, 271, 221));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 724, 19));
+        menuBar->setGeometry(QRect(0, 0, 1167, 19));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -308,7 +304,6 @@ public:
         resetButton->setText(QApplication::translate("MainWindow", "Reset", 0));
         groupBox->setTitle(QApplication::translate("MainWindow", "Moves", 0));
         groupBox_2->setTitle(QApplication::translate("MainWindow", "Solver", 0));
-        groupBox_3->setTitle(QApplication::translate("MainWindow", "Animation", 0));
     } // retranslateUi
 
 };

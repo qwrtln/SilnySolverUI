@@ -90,7 +90,7 @@ void GLView::initializeGL()
 {
     //Initialize OpenGL Backend
     initializeOpenGLFunctions();
-    connect(this, SIGNAL(frameSwapped()), this, SLOT(update()));
+    //connect(this, SIGNAL(frameSwapped()), this, SLOT(update()));
     printContextInformation();
 
     //Set global information
@@ -101,8 +101,8 @@ void GLView::initializeGL()
     {
       //Create Shader (Do not release until VAO is created)
       m_program = new QOpenGLShaderProgram();
-      m_program->addShaderFromSourceFile(QOpenGLShader::Vertex, "../shaders/simple.vert");
-      m_program->addShaderFromSourceFile(QOpenGLShader::Fragment, "../shaders/simple.frag");
+      m_program->addShaderFromSourceFile(QOpenGLShader::Vertex, "shaders/simple.vert");
+      m_program->addShaderFromSourceFile(QOpenGLShader::Fragment, "shaders/simple.frag");
       m_program->link();
       m_program->bind();
 
@@ -216,6 +216,12 @@ void GLView::update()
     //m_transform.rotate(1.0f, QVector3D(0.4f, 0.3f, 0.3f));
 
     // Schedule a redraw
+    QOpenGLWidget::update();
+}
+
+void GLView::rotate()
+{
+    m_transform.rotate(-25,0.0f,1.0f,0.0f);
     QOpenGLWidget::update();
 }
 

@@ -65,7 +65,7 @@
    <widget class="QPushButton" name="RandomizeButton">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>650</x>
       <y>390</y>
       <width>75</width>
       <height>23</height>
@@ -277,7 +277,7 @@
    <widget class="QPushButton" name="resetButton">
     <property name="geometry">
      <rect>
-      <x>620</x>
+      <x>560</x>
       <y>390</y>
       <width>75</width>
       <height>23</height>
@@ -292,7 +292,7 @@
      <rect>
       <x>480</x>
       <y>130</y>
-      <width>241</width>
+      <width>301</width>
       <height>241</height>
      </rect>
     </property>
@@ -313,26 +313,13 @@
      <string>Solver</string>
     </property>
    </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>10</y>
-      <width>181</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Animation</string>
-    </property>
-   </widget>
-   <widget class="glview" name="openGLWidget">
+   <widget class="GLView" name="openGLWidget">
     <property name="geometry">
      <rect>
       <x>200</x>
       <y>10</y>
-      <width>961</width>
-      <height>661</height>
+      <width>271</width>
+      <height>221</height>
      </rect>
     </property>
    </widget>
@@ -360,9 +347,9 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>glview</class>
+   <class>GLView</class>
    <extends>QOpenGLWidget</extends>
-   <header>glview.h</header>
+   <header>inc/glview.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

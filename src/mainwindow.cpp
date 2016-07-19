@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
 
     // Set OpenGL Version information
@@ -83,7 +84,7 @@ void MainWindow::on_solveButton_clicked()
 
 void MainWindow::on_playButton_clicked()
 {
-
+    ui->openGLWidget->rotate();
 }
 
 
